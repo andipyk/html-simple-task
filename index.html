@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>MAHASISWA SISTEM INFORMASI SEMESTER III</title>
+    <style>
+        body{
+            background: blue;
+        }
+        h1 ,h2, table.biodata {
+            margin-top: 50px;
+            color: yellow;
+        }
+        h1 {
+            text-align: right;
+        }
+        img {
+            width: 350px;
+            height: 350px;
+            
+            display: block;
+        }
+        img.center{
+            margin-left: auto;
+            margin-right: auto;
+        }
+        div.menu>ul>li{
+            list-style: none;
+            margin-top: 30px;
+            display: inline-block;
+        }
+
+        li a {
+            background: red;
+            text-decoration: none;
+            padding: 5px 20px;
+            font-family: 'Roboto', sans-serif;
+            font-size: 15px;
+            border: 1px solid red;
+    }
+    li a:hover {
+        background: white;
+        border: 1px solid white;
+    }
+
+    div.menu {
+        
+        float: right;   
+    }
+    </style>
+</head>
+
+<body>
+
+    <div class="menu">
+        <ul>
+            
+                <li> <a href="index.html">HOME</a> </li>
+                <li><a href="file.html">FILE</a></li>
+                <li><a href="about.html">ABOUT</a></li>
+ 
+        </ul>
+    </div>
+    <div class="header">
+        <h1>MAHASISWA SISTEM INFORMASI SEMESTER III</h1>
+    </div>
+    
+    <br><br>
+    <marquee>
+        <h2>BIODATA DIRIKU</h2>
+    </marquee>
+
+    <center>
+        <table>
+                <tr>
+                        <td><img class="center" src="img/cat.jpeg" alt="kucing"></td>
+                        <td><img class="center" src="img/cat.jpeg" alt="kucing"></td>
+                    </tr>
+        </table>
+
+    </center>
+
+
+    <script>
+        var message = "maaf ga bisa klik kanan ya hoho";
+
+        document.addEventListener("contextmenu",function(e){
+            e.preventDefault();
+            alert(message)
+        },false);
+    </script>
+</body>
+
+</html>
